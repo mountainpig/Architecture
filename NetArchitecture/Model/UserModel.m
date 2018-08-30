@@ -10,4 +10,9 @@
 
 @implementation UserModel
 
+- (BOOL)isMyAttention
+{
+    return self.relation == UserRelationTypeAttention || self.relation == UserRelationTypeEachAttention;
+}
+
 @end

@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-
+typedef NS_ENUM(NSUInteger, UserRelationType) {
+    UserRelationTypeNone,
+    UserRelationTypeAttention,
+    UserRelationTypeFans,
+    UserRelationTypeEachAttention,
+};
 @interface UserModel : NSObject
+
+@property (nonatomic, assign) UserRelationType relation;
+/*
+ 胖model example
+ */
+- (BOOL)isMyAttention;
 
 @end
