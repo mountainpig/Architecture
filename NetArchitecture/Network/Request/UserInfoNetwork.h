@@ -7,9 +7,11 @@
 //
 
 #import "NetworkManager.h"
-
+#import "UserModel.h"
 @interface UserInfoNetwork : NetworkManager
 
 + (NSURLSessionDataTask *)getUserInfoWithParams:(NSDictionary *)paramsDict completionHandler:(CompletionHandlerBlock)completion;
+
++ (NSURLSessionDataTask *)getUserModelWithParams:(NSDictionary *)paramsDict completionHandler:(nullable void (^)(UserModel *user,NSDictionary *failDict))completionHandler;
 
 @end

@@ -32,10 +32,22 @@ NSString * const kPropertyListKeyUserName = @"kPropertyListKeyUserName";
              kPropertyListKeyUserName : @""};
 }
 
-/*
-+ (id)userModelWithResponseObject:(id _Nullable)responseObject
+
++ (NSURLSessionDataTask *)getUserModelWithParams:(NSDictionary *)paramsDict completionHandler:(nullable void (^)(UserModel *user,NSDictionary *failDict))completionHandler
+{
+    return [self getRequestWithParams:paramsDict completionHandler:^(NSURLResponse *response, id  _Nullable responseObject, NSError * _Nullable error) {
+        if (error) {
+            NSDictionary *failDict = @{};
+            completionHandler(nil,failDict);
+        } else {
+            completionHandler([self userModelWithResponseObject:responseObject],nil);
+        }
+    }];
+}
+
++ (UserModel *)userModelWithResponseObject:(id _Nullable)responseObject
 {
     return nil;
 }
-*/
+
 @end

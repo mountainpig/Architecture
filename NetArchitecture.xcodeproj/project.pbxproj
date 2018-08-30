@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1D98226921378243000FC047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D98226821378243000FC047 /* AppDelegate.m */; };
-		1D98226C21378243000FC047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D98226B21378243000FC047 /* ViewController.m */; };
 		1D98226F21378244000FC047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D98226D21378243000FC047 /* Main.storyboard */; };
 		1D98227121378245000FC047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D98227021378245000FC047 /* Assets.xcassets */; };
 		1D98227421378245000FC047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D98227221378245000FC047 /* LaunchScreen.storyboard */; };
@@ -19,6 +18,10 @@
 		1D9822B12137CA6D000FC047 /* ContentListNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822AC2137CA6D000FC047 /* ContentListNetwork.m */; };
 		1D9822B22137CA6D000FC047 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822AE2137CA6D000FC047 /* NetworkManager.m */; };
 		1D9822B32137CA6D000FC047 /* UserInfoNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822B02137CA6D000FC047 /* UserInfoNetwork.m */; };
+		1D9822C22137DDE5000FC047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822BC2137DDE5000FC047 /* ViewController.m */; };
+		1D9822C32137DDE5000FC047 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822BE2137DDE5000FC047 /* ViewModel.m */; };
+		1D9822C42137DDE5000FC047 /* UIViewController+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822C12137DDE5000FC047 /* UIViewController+Base.m */; };
+		1D9822C92137DFD3000FC047 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822C82137DFD3000FC047 /* UserModel.m */; };
 		8C33C6015A4A4F0FB4CC776B /* Pods_NetArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6768CD73802FCCA243EF8BA3 /* Pods_NetArchitecture.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +46,6 @@
 		1D98226421378243000FC047 /* NetArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D98226721378243000FC047 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D98226821378243000FC047 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D98226A21378243000FC047 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1D98226B21378243000FC047 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1D98226E21378244000FC047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D98227021378245000FC047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D98227321378245000FC047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +66,15 @@
 		1D9822AE2137CA6D000FC047 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		1D9822AF2137CA6D000FC047 /* UserInfoNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoNetwork.h; sourceTree = "<group>"; };
 		1D9822B02137CA6D000FC047 /* UserInfoNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoNetwork.m; sourceTree = "<group>"; };
+		1D9822BB2137DDE5000FC047 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1D9822BC2137DDE5000FC047 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1D9822BD2137DDE5000FC047 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		1D9822BE2137DDE5000FC047 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		1D9822C02137DDE5000FC047 /* UIViewController+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Base.h"; sourceTree = "<group>"; };
+		1D9822C12137DDE5000FC047 /* UIViewController+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Base.m"; sourceTree = "<group>"; };
+		1D9822C52137DE73000FC047 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1D9822C72137DFD3000FC047 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		1D9822C82137DFD3000FC047 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		6768CD73802FCCA243EF8BA3 /* Pods_NetArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		886CCED982D87B7DD40A6936 /* Pods-NetArchitecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetArchitecture.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetArchitecture/Pods-NetArchitecture.release.xcconfig"; sourceTree = "<group>"; };
 		9D2128CB80E7AB88A0AD3BE2 /* Pods-NetArchitecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetArchitecture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetArchitecture/Pods-NetArchitecture.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,11 +131,13 @@
 		1D98226621378243000FC047 /* NetArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				1D9822C52137DE73000FC047 /* PrefixHeader.pch */,
+				1D9822C62137DFC9000FC047 /* Model */,
+				1D9822BF2137DDE5000FC047 /* Base */,
+				1D9822BA2137DDE5000FC047 /* ViewController */,
 				1D98229C2137851C000FC047 /* Network */,
 				1D98226721378243000FC047 /* AppDelegate.h */,
 				1D98226821378243000FC047 /* AppDelegate.m */,
-				1D98226A21378243000FC047 /* ViewController.h */,
-				1D98226B21378243000FC047 /* ViewController.m */,
 				1D98226D21378243000FC047 /* Main.storyboard */,
 				1D98227021378245000FC047 /* Assets.xcassets */,
 				1D98227221378245000FC047 /* LaunchScreen.storyboard */,
@@ -175,6 +187,35 @@
 				1D9822B02137CA6D000FC047 /* UserInfoNetwork.m */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		1D9822BA2137DDE5000FC047 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1D9822BB2137DDE5000FC047 /* ViewController.h */,
+				1D9822BC2137DDE5000FC047 /* ViewController.m */,
+				1D9822BD2137DDE5000FC047 /* ViewModel.h */,
+				1D9822BE2137DDE5000FC047 /* ViewModel.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1D9822BF2137DDE5000FC047 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1D9822C02137DDE5000FC047 /* UIViewController+Base.h */,
+				1D9822C12137DDE5000FC047 /* UIViewController+Base.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1D9822C62137DFC9000FC047 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D9822C72137DFD3000FC047 /* UserModel.h */,
+				1D9822C82137DFD3000FC047 /* UserModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		42FC650AE738975AF328A263 /* Frameworks */ = {
@@ -365,10 +406,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D9822C22137DDE5000FC047 /* ViewController.m in Sources */,
+				1D9822C42137DDE5000FC047 /* UIViewController+Base.m in Sources */,
 				1D9822B32137CA6D000FC047 /* UserInfoNetwork.m in Sources */,
-				1D98226C21378243000FC047 /* ViewController.m in Sources */,
+				1D9822C32137DDE5000FC047 /* ViewModel.m in Sources */,
 				1D9822B12137CA6D000FC047 /* ContentListNetwork.m in Sources */,
 				1D9822A92137CA3E000FC047 /* NSObject+NetWorkTask.m in Sources */,
+				1D9822C92137DFD3000FC047 /* UserModel.m in Sources */,
 				1D98227721378245000FC047 /* main.m in Sources */,
 				1D9822B22137CA6D000FC047 /* NetworkManager.m in Sources */,
 				1D98226921378243000FC047 /* AppDelegate.m in Sources */,
@@ -542,6 +586,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NetArchitecture/PrefixHeader.pch;
 				INFOPLIST_FILE = NetArchitecture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -560,6 +606,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NetArchitecture/PrefixHeader.pch;
 				INFOPLIST_FILE = NetArchitecture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
