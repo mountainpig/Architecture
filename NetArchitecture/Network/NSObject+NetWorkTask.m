@@ -33,7 +33,7 @@ const void *const kTaskArrayKey = &kTaskArrayKey;
     return objc_getAssociatedObject(self, kTaskArrayKey);
 }
 
-- (void)setTaskArray:(NSMutableArray *)taskArray
+- (void)setTaskArray:(NSPointerArray *)taskArray
 {
     objc_setAssociatedObject(self, kTaskArrayKey, taskArray, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
