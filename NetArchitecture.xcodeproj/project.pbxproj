@@ -15,9 +15,10 @@
 		1D98227721378245000FC047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D98227621378245000FC047 /* main.m */; };
 		1D98228121378245000FC047 /* NetArchitectureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D98228021378245000FC047 /* NetArchitectureTests.m */; };
 		1D98228C21378246000FC047 /* NetArchitectureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D98228B21378246000FC047 /* NetArchitectureUITests.m */; };
-		1D98229F2137851C000FC047 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D98229E2137851C000FC047 /* NetworkManager.m */; };
-		1D9822A2213790AB000FC047 /* UserInfoNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822A1213790AB000FC047 /* UserInfoNetwork.m */; };
-		1D9822A62137C11B000FC047 /* ContentListNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822A52137C11B000FC047 /* ContentListNetwork.m */; };
+		1D9822A92137CA3E000FC047 /* NSObject+NetWorkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822A82137CA3E000FC047 /* NSObject+NetWorkTask.m */; };
+		1D9822B12137CA6D000FC047 /* ContentListNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822AC2137CA6D000FC047 /* ContentListNetwork.m */; };
+		1D9822B22137CA6D000FC047 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822AE2137CA6D000FC047 /* NetworkManager.m */; };
+		1D9822B32137CA6D000FC047 /* UserInfoNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822B02137CA6D000FC047 /* UserInfoNetwork.m */; };
 		8C33C6015A4A4F0FB4CC776B /* Pods_NetArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6768CD73802FCCA243EF8BA3 /* Pods_NetArchitecture.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,13 +56,15 @@
 		1D98228721378246000FC047 /* NetArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D98228B21378246000FC047 /* NetArchitectureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetArchitectureUITests.m; sourceTree = "<group>"; };
 		1D98228D21378246000FC047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D98229D2137851C000FC047 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
-		1D98229E2137851C000FC047 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
-		1D9822A0213790AB000FC047 /* UserInfoNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoNetwork.h; sourceTree = "<group>"; };
-		1D9822A1213790AB000FC047 /* UserInfoNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoNetwork.m; sourceTree = "<group>"; };
 		1D9822A32137BC5B000FC047 /* PropertyListKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyListKeys.h; sourceTree = "<group>"; };
-		1D9822A42137C11B000FC047 /* ContentListNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentListNetwork.h; sourceTree = "<group>"; };
-		1D9822A52137C11B000FC047 /* ContentListNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentListNetwork.m; sourceTree = "<group>"; };
+		1D9822A72137CA3E000FC047 /* NSObject+NetWorkTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NetWorkTask.h"; sourceTree = "<group>"; };
+		1D9822A82137CA3E000FC047 /* NSObject+NetWorkTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NetWorkTask.m"; sourceTree = "<group>"; };
+		1D9822AB2137CA6D000FC047 /* ContentListNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentListNetwork.h; sourceTree = "<group>"; };
+		1D9822AC2137CA6D000FC047 /* ContentListNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentListNetwork.m; sourceTree = "<group>"; };
+		1D9822AD2137CA6D000FC047 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		1D9822AE2137CA6D000FC047 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		1D9822AF2137CA6D000FC047 /* UserInfoNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoNetwork.h; sourceTree = "<group>"; };
+		1D9822B02137CA6D000FC047 /* UserInfoNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoNetwork.m; sourceTree = "<group>"; };
 		6768CD73802FCCA243EF8BA3 /* Pods_NetArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		886CCED982D87B7DD40A6936 /* Pods-NetArchitecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetArchitecture.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetArchitecture/Pods-NetArchitecture.release.xcconfig"; sourceTree = "<group>"; };
 		9D2128CB80E7AB88A0AD3BE2 /* Pods-NetArchitecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetArchitecture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetArchitecture/Pods-NetArchitecture.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,15 +156,25 @@
 		1D98229C2137851C000FC047 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				1D98229D2137851C000FC047 /* NetworkManager.h */,
-				1D98229E2137851C000FC047 /* NetworkManager.m */,
-				1D9822A0213790AB000FC047 /* UserInfoNetwork.h */,
-				1D9822A1213790AB000FC047 /* UserInfoNetwork.m */,
-				1D9822A42137C11B000FC047 /* ContentListNetwork.h */,
-				1D9822A52137C11B000FC047 /* ContentListNetwork.m */,
+				1D9822AA2137CA6D000FC047 /* Request */,
 				1D9822A32137BC5B000FC047 /* PropertyListKeys.h */,
+				1D9822A72137CA3E000FC047 /* NSObject+NetWorkTask.h */,
+				1D9822A82137CA3E000FC047 /* NSObject+NetWorkTask.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		1D9822AA2137CA6D000FC047 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				1D9822AD2137CA6D000FC047 /* NetworkManager.h */,
+				1D9822AE2137CA6D000FC047 /* NetworkManager.m */,
+				1D9822AB2137CA6D000FC047 /* ContentListNetwork.h */,
+				1D9822AC2137CA6D000FC047 /* ContentListNetwork.m */,
+				1D9822AF2137CA6D000FC047 /* UserInfoNetwork.h */,
+				1D9822B02137CA6D000FC047 /* UserInfoNetwork.m */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 		42FC650AE738975AF328A263 /* Frameworks */ = {
@@ -352,11 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D98229F2137851C000FC047 /* NetworkManager.m in Sources */,
+				1D9822B32137CA6D000FC047 /* UserInfoNetwork.m in Sources */,
 				1D98226C21378243000FC047 /* ViewController.m in Sources */,
-				1D9822A62137C11B000FC047 /* ContentListNetwork.m in Sources */,
-				1D9822A2213790AB000FC047 /* UserInfoNetwork.m in Sources */,
+				1D9822B12137CA6D000FC047 /* ContentListNetwork.m in Sources */,
+				1D9822A92137CA3E000FC047 /* NSObject+NetWorkTask.m in Sources */,
 				1D98227721378245000FC047 /* main.m in Sources */,
+				1D9822B22137CA6D000FC047 /* NetworkManager.m in Sources */,
 				1D98226921378243000FC047 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

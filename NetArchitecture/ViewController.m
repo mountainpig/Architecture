@@ -23,13 +23,14 @@
 
 - (void)userInfoRequest
 {
-    [UserInfoNetwork getUserInfoWithParams:@{@"userId":@""} completionHandler:^(NSDictionary *dataDict, NSDictionary *failDict) {
+    NSURLSessionDataTask *task = [UserInfoNetwork getUserInfoWithParams:@{@"userId":@""} completionHandler:^(NSDictionary *dataDict, NSDictionary *failDict) {
         if (dataDict) {
             
         } else {
             
         }
     }];
+    [self addNetTask:task];
 }
 
 - (void)didReceiveMemoryWarning {

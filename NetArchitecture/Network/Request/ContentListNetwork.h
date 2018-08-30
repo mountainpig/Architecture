@@ -10,6 +10,6 @@
 
 @interface ContentListNetwork : NetworkManager
 
-+ (void)getContentListWithParams:(NSDictionary *)paramsDict completionHandler:(CompletionHandlerBlock)completion;
++ (NSURLSessionDataTask *)getContentListWithParams:(NSDictionary *)paramsDict completionHandler:(CompletionHandlerBlock)completion;
 
 @end

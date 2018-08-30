@@ -13,9 +13,9 @@ NSString * const kPropertyListKeyContentName = @"kPropertyListKeyContentName";
 
 @implementation ContentListNetwork
 
-+ (void)getContentListWithParams:(NSDictionary *)paramsDict completionHandler:(CompletionHandlerBlock)completion
++ (NSURLSessionDataTask *)getContentListWithParams:(NSDictionary *)paramsDict completionHandler:(CompletionHandlerBlock)completion
 {
-    [self getRequestWithParams:paramsDict completionHandler:^(NSURLResponse *response, id  _Nullable responseObject, NSError * _Nullable error) {
+    return [self getRequestWithParams:paramsDict completionHandler:^(NSURLResponse *response, id  _Nullable responseObject, NSError * _Nullable error) {
         if (error) {
             NSDictionary *failDict = @{};
             completion(nil,failDict);

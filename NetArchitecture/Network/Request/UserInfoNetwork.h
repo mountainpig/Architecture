@@ -10,6 +10,6 @@
 
 @interface UserInfoNetwork : NetworkManager
 
-+ (void)getUserInfoWithParams:(NSDictionary *)paramsDict completionHandler:(CompletionHandlerBlock)completion;
++ (NSURLSessionDataTask *)getUserInfoWithParams:(NSDictionary *)paramsDict completionHandler:(CompletionHandlerBlock)completion;
 
 @end

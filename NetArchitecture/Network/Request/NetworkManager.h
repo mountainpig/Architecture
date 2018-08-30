@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFNetworking.h>
+#import "NSObject+NetWorkTask.h"
 /*
 @protocol NetworkManagerDelegate
 - (void)successedWithResponse:(id  _Nullable)responseObject;
@@ -22,9 +23,9 @@ typedef void(^CompletionHandlerBlock)(NSDictionary * dataDict, NSDictionary * fa
 @interface NetworkManager : NSObject
 
 //默认服务域名
-+ (void)getRequestWithParams:(NSDictionary *)paramsDict completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler;
++ (NSURLSessionDataTask *)getRequestWithParams:(NSDictionary *)paramsDict completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler;
 
 
-+ (void)getRequestWithServer:(NSString *)server params:(NSDictionary *)paramsDict completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler;
++ (NSURLSessionDataTask *)getRequestWithServer:(NSString *)server params:(NSDictionary *)paramsDict completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler;
 
 @end

@@ -12,12 +12,12 @@ NSString * const DefaultServer = @"https://www.xxoo.com/";
 
 @implementation NetworkManager
 
-+ (void)getRequestWithParams:(NSDictionary *)paramsDict completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler
++ (NSURLSessionDataTask *)getRequestWithParams:(NSDictionary *)paramsDict completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler
 {
-    [self getRequestWithServer:DefaultServer params:paramsDict completionHandler:completionHandler];
+    return [self getRequestWithServer:DefaultServer params:paramsDict completionHandler:completionHandler];
 }
 
-+ (void)getRequestWithServer:(NSString *)server params:(NSDictionary *)paramsDict completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler;
++ (NSURLSessionDataTask *)getRequestWithServer:(NSString *)server params:(NSDictionary *)paramsDict completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler;
 {
     NSURLRequest *request = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET" URLString:server parameters:nil error:nil];
     NSURLSessionDataTask *dataTask = [[AFHTTPSessionManager manager] dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
@@ -26,6 +26,7 @@ NSString * const DefaultServer = @"https://www.xxoo.com/";
         }
     }];
     [dataTask resume];
+    return dataTask;
 }
 
 @end
