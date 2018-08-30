@@ -23,12 +23,12 @@ const void *const kTaskArrayKey = &kTaskArrayKey;
         return;
     }
     if (!self.taskArray) {
-        self.taskArray = [[NSMutableArray alloc] init];
+        self.taskArray = [NSPointerArray weakObjectsPointerArray];
     }
-    [self.taskArray addNetTask:task];
+    [self.taskArray addPointer:(__bridge void * _Nullable)task];
 }
 
-- (NSMutableArray *)taskArray
+- (NSPointerArray *)taskArray
 {
     return objc_getAssociatedObject(self, kTaskArrayKey);
 }
@@ -40,10 +40,9 @@ const void *const kTaskArrayKey = &kTaskArrayKey;
 
 - (void)task_dealloc
 {
-    [self.taskArray enumerateObjectsUsingBlock:^(NSURLSessionDataTask *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.taskArray.allObjects enumerateObjectsUsingBlock:^(NSURLSessionDataTask *obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [obj cancel];
     }];
-    [self.taskArray removeAllObjects];
     [self task_dealloc];
 }
 

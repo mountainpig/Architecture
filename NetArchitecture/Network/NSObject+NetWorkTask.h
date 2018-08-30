@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (NetWorkTask)
-@property (nonatomic, strong) NSMutableArray *taskArray;
+@property (nonatomic, strong) NSPointerArray *taskArray;
 
 - (void)addNetTask:(NSURLSessionDataTask *)task;
 
