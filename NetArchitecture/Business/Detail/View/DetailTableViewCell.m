@@ -43,6 +43,8 @@
 
 - (void)numBtn:(UIButton *)sender
 {
-    [self.delegate btnClickWithChangeStr:@"999" indexPath:0];
+    NSString *test = @"999";
+    [self loadNumber:test];
+    [self.delegate btnClickWithChangeStr:test indexPath:self.indexPath];
 }
 @end

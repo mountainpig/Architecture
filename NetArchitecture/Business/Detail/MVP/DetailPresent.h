@@ -12,9 +12,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailPresent : NSObject <DetailProtocol>
-
+@property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, weak) id <DetailProtocol>delegate;
-
+- (void)loadData;
+- (void)refresh;
 @end
 
 NS_ASSUME_NONNULL_END

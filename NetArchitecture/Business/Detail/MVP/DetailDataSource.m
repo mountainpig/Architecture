@@ -9,7 +9,6 @@
 #import "DetailDataSource.h"
 
 @interface DetailDataSource()
-@property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, copy) loadBlock block;
 @end
 
@@ -23,13 +22,6 @@
     return self;
 }
 
-- (void)loadData
-{
-    DetailModel *model = [DetailModel new];
-    model.number = @"1";
-    self.dataArray = [[NSMutableArray alloc] init];
-    [self.dataArray addObject:model];
-}
 
 #pragma mark - UITableViewDataSource
 

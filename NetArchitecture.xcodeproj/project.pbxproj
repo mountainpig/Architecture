@@ -20,13 +20,13 @@
 		1D9822B32137CA6D000FC047 /* UserInfoNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822B02137CA6D000FC047 /* UserInfoNetwork.m */; };
 		1D9822C42137DDE5000FC047 /* UIViewController+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822C12137DDE5000FC047 /* UIViewController+Base.m */; };
 		1D9822C92137DFD3000FC047 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9822C82137DFD3000FC047 /* UserModel.m */; };
-		2618329B22C5B6D3007C0264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2618329822C5B6D2007C0264 /* ViewController.m */; };
-		2618329C22C5B6D3007C0264 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2618329922C5B6D2007C0264 /* ViewModel.m */; };
 		261832A522C5B739007C0264 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261832A222C5B739007C0264 /* DetailViewController.m */; };
 		261832A822C5B7F3007C0264 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 261832A722C5B7F3007C0264 /* DetailTableViewCell.m */; };
 		261832AB22C70996007C0264 /* DetailPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 261832AA22C70996007C0264 /* DetailPresent.m */; };
 		261832AE22C709A8007C0264 /* DetailDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 261832AD22C709A8007C0264 /* DetailDataSource.m */; };
 		261832B322C71173007C0264 /* DetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 261832B222C71173007C0264 /* DetailModel.m */; };
+		261832BB22C71A83007C0264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261832B822C71A83007C0264 /* ViewController.m */; };
+		261832BC22C71A83007C0264 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 261832B922C71A83007C0264 /* ViewModel.m */; };
 		8C33C6015A4A4F0FB4CC776B /* Pods_NetArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6768CD73802FCCA243EF8BA3 /* Pods_NetArchitecture.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,10 +76,6 @@
 		1D9822C52137DE73000FC047 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1D9822C72137DFD3000FC047 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		1D9822C82137DFD3000FC047 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
-		2618329722C5B6D2007C0264 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
-		2618329822C5B6D2007C0264 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2618329922C5B6D2007C0264 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
-		2618329A22C5B6D2007C0264 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		261832A222C5B739007C0264 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		261832A322C5B739007C0264 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		261832A622C5B7F3007C0264 /* DetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
@@ -91,6 +87,10 @@
 		261832AF22C70AA8007C0264 /* DetailProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailProtocol.h; sourceTree = "<group>"; };
 		261832B122C71173007C0264 /* DetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailModel.h; sourceTree = "<group>"; };
 		261832B222C71173007C0264 /* DetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailModel.m; sourceTree = "<group>"; };
+		261832B722C71A83007C0264 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		261832B822C71A83007C0264 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		261832B922C71A83007C0264 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		261832BA22C71A83007C0264 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6768CD73802FCCA243EF8BA3 /* Pods_NetArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		886CCED982D87B7DD40A6936 /* Pods-NetArchitecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetArchitecture.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetArchitecture/Pods-NetArchitecture.release.xcconfig"; sourceTree = "<group>"; };
 		9D2128CB80E7AB88A0AD3BE2 /* Pods-NetArchitecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetArchitecture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetArchitecture/Pods-NetArchitecture.debug.xcconfig"; sourceTree = "<group>"; };
@@ -235,10 +235,9 @@
 		2618329622C5B6D2007C0264 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2618329722C5B6D2007C0264 /* ViewModel.h */,
-				2618329922C5B6D2007C0264 /* ViewModel.m */,
-				2618329A22C5B6D2007C0264 /* ViewController.h */,
-				2618329822C5B6D2007C0264 /* ViewController.m */,
+				261832B522C71A83007C0264 /* Model */,
+				261832B622C71A83007C0264 /* MVVM */,
+				261832B422C71A83007C0264 /* View */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -283,6 +282,31 @@
 				261832B222C71173007C0264 /* DetailModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		261832B422C71A83007C0264 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		261832B522C71A83007C0264 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		261832B622C71A83007C0264 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				261832B722C71A83007C0264 /* ViewModel.h */,
+				261832B922C71A83007C0264 /* ViewModel.m */,
+				261832B822C71A83007C0264 /* ViewController.m */,
+				261832BA22C71A83007C0264 /* ViewController.h */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		42FC650AE738975AF328A263 /* Frameworks */ = {
@@ -473,11 +497,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2618329B22C5B6D3007C0264 /* ViewController.m in Sources */,
+				261832BB22C71A83007C0264 /* ViewController.m in Sources */,
 				261832AE22C709A8007C0264 /* DetailDataSource.m in Sources */,
 				1D9822C42137DDE5000FC047 /* UIViewController+Base.m in Sources */,
 				261832AB22C70996007C0264 /* DetailPresent.m in Sources */,
-				2618329C22C5B6D3007C0264 /* ViewModel.m in Sources */,
 				1D9822B32137CA6D000FC047 /* UserInfoNetwork.m in Sources */,
 				1D9822B12137CA6D000FC047 /* ContentListNetwork.m in Sources */,
 				1D9822A92137CA3E000FC047 /* NSObject+NetWorkTask.m in Sources */,
@@ -486,6 +509,7 @@
 				1D9822C92137DFD3000FC047 /* UserModel.m in Sources */,
 				261832A522C5B739007C0264 /* DetailViewController.m in Sources */,
 				1D98227721378245000FC047 /* main.m in Sources */,
+				261832BC22C71A83007C0264 /* ViewModel.m in Sources */,
 				1D9822B22137CA6D000FC047 /* NetworkManager.m in Sources */,
 				1D98226921378243000FC047 /* AppDelegate.m in Sources */,
 			);

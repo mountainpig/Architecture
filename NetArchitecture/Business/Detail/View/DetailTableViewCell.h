@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailTableViewCell : UITableViewCell
 
+@property (nonatomic, strong) NSIndexPath *indexPath;
 @property (nonatomic, weak) id <DetailProtocol>delegate;
 
 - (void)loadNumber:(NSString *)number;

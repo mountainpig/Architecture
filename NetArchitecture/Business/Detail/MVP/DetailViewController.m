@@ -26,17 +26,30 @@
     
     self.present = [[DetailPresent alloc] init];
     self.present.delegate = self;
+    [self.present loadData];
     
     __weak typeof(self) weakSelf = self;
     self.dataSource = [[DetailDataSource alloc] initWithBlock:^(DetailModel *model, DetailTableViewCell *cell, NSIndexPath *indexPath) {
         cell.delegate = weakSelf.present;
+        cell.indexPath = indexPath;
         [cell loadNumber:model.number];
     }];
-    [self.dataSource loadData];
+    self.dataSource.dataArray = self.present.dataArray;
 
-    
     [self.view addSubview:self.tableView];
     // Do any additional setup after loading the view
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"刷新" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(refreshClick) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+}
+
+#pragma mark - action
+- (void)refreshClick
+{
+    [self.present refresh];
 }
 
 #pragma mark - DetailProtocol
@@ -44,7 +57,6 @@
 {
     [self.tableView reloadData];
 }
-
 
 #pragma mark - getters and setters
 

@@ -13,9 +13,10 @@
 typedef void(^loadBlock) (DetailModel *model,DetailTableViewCell *cell,NSIndexPath *indexPath);
 
 @interface DetailDataSource : NSObject<UITableViewDataSource>
+@property (nonatomic, strong) NSMutableArray *dataArray;
 
 - (instancetype)initWithBlock:(loadBlock)block;
-- (void)loadData;
+
 
 
 @end
