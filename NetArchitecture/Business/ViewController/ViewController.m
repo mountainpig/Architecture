@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ViewModel.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -36,12 +37,22 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [UITableViewCell new];
+    static NSString *cellIdenfier = @"cellIdenfier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdenfier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:cellIdenfier];
+    }
+    return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return 2;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.navigationController pushViewController:[DetailViewController new] animated:YES];
 }
 
 #pragma mark - CustomDelegate
@@ -74,6 +85,9 @@
 {
     if (!_tableView) {
         _tableView = [[UITableView alloc] init];
+        _tableView.frame = self.view.bounds;
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
     }
     return _tableView;
 }
