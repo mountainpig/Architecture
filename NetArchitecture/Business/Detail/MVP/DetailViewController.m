@@ -21,6 +21,13 @@
 
 @implementation DetailViewController
 
+
+- (void)loadWithParmas:(NSDictionary *)parmas
+{
+    NSLog(@"load detail");
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

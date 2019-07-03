@@ -9,6 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "UserModel.h"
 
+typedef void(^successBlock) (NSArray *array);
+
 @interface ViewModel : NSObject
-- (void)getUserInfoWithCompletion:(void(^)(UserModel *user))completion;
+
+@property (nonatomic, weak) UIViewController *viewController;
+@property (nonatomic, copy) successBlock sucess;
+@property (nonatomic, strong) NSIndexPath *selectIndexPath;
+
+- (void)getUserListWithCompletion:(void(^)(NSArray *array))completion;
 @end

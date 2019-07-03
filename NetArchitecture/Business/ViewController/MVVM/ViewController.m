@@ -8,11 +8,11 @@
 
 #import "ViewController.h"
 #import "ViewModel.h"
-#import "DetailViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) ViewModel *viewModel;
+@property (nonatomic, strong) NSMutableArray *dataArray;
 @end
 
 @implementation ViewController
@@ -23,14 +23,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self.view addSubview:self.tableView];
-    
-    [self userInfoRequest];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(xxoo) name:@"" object:nil];
+    __weak typeof(self) weakSelf = self;
+    self.viewModel.sucess = ^(NSArray *array) {
+        [weakSelf.dataArray removeAllObjects];
+        [weakSelf.dataArray addObjectsFromArray:array];
+        [weakSelf.tableView reloadData];
+    };
+    [self userListRequest];
 }
 
 #pragma mark - UITableViewDelegate
@@ -42,17 +41,18 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:cellIdenfier];
     }
+    cell.textLabel.text = self.dataArray[indexPath.row];
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return self.dataArray.count;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.navigationController pushViewController:[DetailViewController new] animated:YES];
+    self.viewModel.selectIndexPath = indexPath;
 }
 
 #pragma mark - CustomDelegate
@@ -71,10 +71,11 @@
 
 #pragma mark - private methods
 
-- (void)userInfoRequest
+- (void)userListRequest
 {
-    [self.viewModel getUserInfoWithCompletion:^(UserModel *user) {
-        
+    __weak typeof(self) weakSelf = self;
+    [self.viewModel getUserListWithCompletion:^(NSArray *array) {
+        weakSelf.viewModel.sucess(array);
     }];
 
 }
@@ -96,9 +97,17 @@
 {
     if (!_viewModel) {
         _viewModel = [[ViewModel alloc] init];
+        _viewModel.viewController = self;
     }
     return _viewModel;
 }
 
+- (NSMutableArray *)dataArray
+{
+    if (!_dataArray) {
+        _dataArray = [[NSMutableArray alloc] init];
+    }
+    return _dataArray;
+}
 
 @end
