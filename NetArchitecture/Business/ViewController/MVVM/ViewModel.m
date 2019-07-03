@@ -29,10 +29,12 @@
     [self removeObserver:self forKeyPath:@"selectIndexPath"];
 }
 
+#pragma mark - KVO
+
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary*)change context:(void *)context {
     NSIndexPath *indexPath = change[NSKeyValueChangeNewKey];
     if (indexPath.row == 0) {
-        UIViewController *detailVC = [[RouterManager sharedInstance] performTargetClassName:@"DetailViewController" action:@"loadWithParmas:" parmas:nil];
+        UIViewController *detailVC = [[RouterManager sharedInstance] detailWithParmas:nil];
         [self.viewController.navigationController pushViewController:detailVC animated:YES];
     }
     

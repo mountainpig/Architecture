@@ -26,7 +26,15 @@ static RouterManager *instance = nil;
 - (UIViewController *)performTargetClassName:(NSString *)name action:(NSString *)action parmas:(NSDictionary *)parmas
 {
     UIViewController *target = (UIViewController *)[[NSClassFromString(name) alloc] init];
-    [target performSelector:NSSelectorFromString(action) withObject:parmas];
+    if ([target respondsToSelector:NSSelectorFromString(action)]) {
+        [target performSelector:NSSelectorFromString(action) withObject:parmas];
+    }
     return target;
 }
+
+- (UIViewController *)detailWithParmas:(NSDictionary *)parmas
+{
+    return [self performTargetClassName:@"DetailViewController" action:@"loadWithParmas:" parmas:nil];
+}
+
 @end

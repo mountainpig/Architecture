@@ -13,8 +13,10 @@
 
 + (RouterManager *)sharedInstance;
 
-
 - (UIViewController *)performTargetClassName:(NSString *)name action:(NSString *)action parmas:(NSDictionary *)parmas;
+
+//详情
+- (UIViewController *)detailWithParmas:(NSDictionary *)parmas;
 
 @end
 
