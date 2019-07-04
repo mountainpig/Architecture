@@ -29,6 +29,7 @@
 		261832BC22C71A83007C0264 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 261832B922C71A83007C0264 /* ViewModel.m */; };
 		26DE6EFA22CC95690098C33F /* RouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DE6EF922CC95690098C33F /* RouterManager.m */; };
 		26DE6F0822CDD4BA0098C33F /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DE6F0722CDD4BA0098C33F /* AFNetworking.framework */; };
+		26DE6F1022CDE25B0098C33F /* NSTimer+Weak.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DE6F0F22CDE25B0098C33F /* NSTimer+Weak.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,8 @@
 		26DE6F0322CDD4300098C33F /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DE6F0522CDD4500098C33F /* Pods_NetArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_NetArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DE6F0722CDD4BA0098C33F /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26DE6F0E22CDE25B0098C33F /* NSTimer+Weak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Weak.h"; sourceTree = "<group>"; };
+		26DE6F0F22CDE25B0098C33F /* NSTimer+Weak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Weak.m"; sourceTree = "<group>"; };
 		6768CD73802FCCA243EF8BA3 /* Pods_NetArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		886CCED982D87B7DD40A6936 /* Pods-NetArchitecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetArchitecture.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetArchitecture/Pods-NetArchitecture.release.xcconfig"; sourceTree = "<group>"; };
 		9D2128CB80E7AB88A0AD3BE2 /* Pods-NetArchitecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetArchitecture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetArchitecture/Pods-NetArchitecture.debug.xcconfig"; sourceTree = "<group>"; };
@@ -216,6 +219,7 @@
 		1D9822BF2137DDE5000FC047 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				26DE6F0922CDE1B40098C33F /* Tool */,
 				1D9822C02137DDE5000FC047 /* UIViewController+Base.h */,
 				1D9822C12137DDE5000FC047 /* UIViewController+Base.m */,
 			);
@@ -324,6 +328,23 @@
 				26DE6EF922CC95690098C33F /* RouterManager.m */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		26DE6F0922CDE1B40098C33F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				26DE6F0A22CDE1B40098C33F /* Category */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		26DE6F0A22CDE1B40098C33F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				26DE6F0E22CDE25B0098C33F /* NSTimer+Weak.h */,
+				26DE6F0F22CDE25B0098C33F /* NSTimer+Weak.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		42FC650AE738975AF328A263 /* Frameworks */ = {
@@ -529,6 +550,7 @@
 				261832B322C71173007C0264 /* DetailModel.m in Sources */,
 				261832A822C5B7F3007C0264 /* DetailTableViewCell.m in Sources */,
 				1D9822C92137DFD3000FC047 /* UserModel.m in Sources */,
+				26DE6F1022CDE25B0098C33F /* NSTimer+Weak.m in Sources */,
 				261832A522C5B739007C0264 /* DetailViewController.m in Sources */,
 				1D98227721378245000FC047 /* main.m in Sources */,
 				261832BC22C71A83007C0264 /* ViewModel.m in Sources */,
