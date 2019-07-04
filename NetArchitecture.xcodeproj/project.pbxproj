@@ -695,7 +695,8 @@
 			baseConfigurationReference = 9D2128CB80E7AB88A0AD3BE2 /* Pods-NetArchitecture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5QHANQGM23;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NetArchitecture/PrefixHeader.pch;
 				INFOPLIST_FILE = NetArchitecture/Info.plist;
@@ -704,8 +705,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.NetArchitecture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.videoHD2019;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = opencoursetest04.19;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -715,7 +717,8 @@
 			baseConfigurationReference = 886CCED982D87B7DD40A6936 /* Pods-NetArchitecture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5QHANQGM23;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NetArchitecture/PrefixHeader.pch;
 				INFOPLIST_FILE = NetArchitecture/Info.plist;
@@ -724,8 +727,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.NetArchitecture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.videoHD2019;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = opencoursetest04.19;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
