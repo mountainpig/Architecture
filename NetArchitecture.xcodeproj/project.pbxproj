@@ -28,7 +28,6 @@
 		261832BB22C71A83007C0264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261832B822C71A83007C0264 /* ViewController.m */; };
 		261832BC22C71A83007C0264 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 261832B922C71A83007C0264 /* ViewModel.m */; };
 		26DE6EFA22CC95690098C33F /* RouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DE6EF922CC95690098C33F /* RouterManager.m */; };
-		8C33C6015A4A4F0FB4CC776B /* Pods_NetArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6768CD73802FCCA243EF8BA3 /* Pods_NetArchitecture.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C33C6015A4A4F0FB4CC776B /* Pods_NetArchitecture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,7 +725,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.netease.videoHD2019;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = opencoursetest04.19;
