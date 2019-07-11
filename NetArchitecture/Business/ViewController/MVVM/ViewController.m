@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "ViewModel.h"
+#import "ItemTableViewCell.h"
+#import "ItemTableViewCell+EX.h"
+#import "ItemModel.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -36,12 +39,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellIdenfier = @"cellIdenfier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdenfier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:cellIdenfier];
+    if (self.dataArray.count <= indexPath.row) {
+        return [UITableViewCell new];
     }
-    cell.textLabel.text = self.dataArray[indexPath.row];
+    ItemModel *model = self.dataArray[indexPath.row];
+    ItemTableViewCell *cell = [ItemTableViewCell cellWithTableView:tableView type:model.type];
+    [cell loadWithModel:model];
     return cell;
 }
 

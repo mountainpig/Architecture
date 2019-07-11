@@ -9,6 +9,7 @@
 #import "ViewModel.h"
 #import "UserInfoNetwork.h"
 #import "RouterManager.h"
+#import "ItemModel.h"
 
 @implementation ViewModel
 
@@ -21,7 +22,19 @@
 
 - (void)getUserListWithCompletion:(void(^)(NSArray *array))completion
 {
-    completion(@[@"1",@"2"]);
+    ItemModel *item1 = [ItemModel new];
+    item1.type = ItemLabelType;
+    item1.text = @"label";
+    
+    ItemModel *item2 = [ItemModel new];
+    item2.type = ItemButtonType;
+    item2.title = @"button";
+    
+    ItemModel *item3 = [ItemModel new];
+    item3.type = ItemImageType;
+    item3.image = [UIImage imageNamed:@"question"];
+    
+    completion(@[item1,item2,item3]);
 }
 
 - (void)dealloc

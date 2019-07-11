@@ -27,6 +27,13 @@
 		261832B322C71173007C0264 /* DetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 261832B222C71173007C0264 /* DetailModel.m */; };
 		261832BB22C71A83007C0264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261832B822C71A83007C0264 /* ViewController.m */; };
 		261832BC22C71A83007C0264 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 261832B922C71A83007C0264 /* ViewModel.m */; };
+		269D44FC22D7190B0058936A /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D44FB22D7190B0058936A /* ItemModel.m */; };
+		269D44FF22D71A5D0058936A /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = 269D44FE22D71A5D0058936A /* question.png */; };
+		269D450222D725070058936A /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D450122D725070058936A /* ItemTableViewCell.m */; };
+		269D450F22D72BA10058936A /* ItemTableViewCell+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D450E22D72BA10058936A /* ItemTableViewCell+EX.m */; };
+		269D451722D72D590058936A /* ItemImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D451222D72D590058936A /* ItemImageTableViewCell.m */; };
+		269D451822D72D590058936A /* ItemButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D451322D72D590058936A /* ItemButtonTableViewCell.m */; };
+		269D451922D72D590058936A /* ItemLabelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D451522D72D590058936A /* ItemLabelTableViewCell.m */; };
 		26DE6EFA22CC95690098C33F /* RouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DE6EF922CC95690098C33F /* RouterManager.m */; };
 		26DE6F0822CDD4BA0098C33F /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DE6F0722CDD4BA0098C33F /* AFNetworking.framework */; };
 		26DE6F1022CDE25B0098C33F /* NSTimer+Weak.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DE6F0F22CDE25B0098C33F /* NSTimer+Weak.m */; };
@@ -93,6 +100,19 @@
 		261832B822C71A83007C0264 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		261832B922C71A83007C0264 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
 		261832BA22C71A83007C0264 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		269D44FA22D7190B0058936A /* ItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
+		269D44FB22D7190B0058936A /* ItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemModel.m; sourceTree = "<group>"; };
+		269D44FE22D71A5D0058936A /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question.png; sourceTree = "<group>"; };
+		269D450022D725070058936A /* ItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemTableViewCell.h; sourceTree = "<group>"; };
+		269D450122D725070058936A /* ItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemTableViewCell.m; sourceTree = "<group>"; };
+		269D450D22D72BA10058936A /* ItemTableViewCell+EX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ItemTableViewCell+EX.h"; sourceTree = "<group>"; };
+		269D450E22D72BA10058936A /* ItemTableViewCell+EX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ItemTableViewCell+EX.m"; sourceTree = "<group>"; };
+		269D451122D72D590058936A /* ItemLabelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemLabelTableViewCell.h; sourceTree = "<group>"; };
+		269D451222D72D590058936A /* ItemImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemImageTableViewCell.m; sourceTree = "<group>"; };
+		269D451322D72D590058936A /* ItemButtonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemButtonTableViewCell.m; sourceTree = "<group>"; };
+		269D451422D72D590058936A /* ItemImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemImageTableViewCell.h; sourceTree = "<group>"; };
+		269D451522D72D590058936A /* ItemLabelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemLabelTableViewCell.m; sourceTree = "<group>"; };
+		269D451622D72D590058936A /* ItemButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemButtonTableViewCell.h; sourceTree = "<group>"; };
 		26DE6EF822CC95690098C33F /* RouterManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterManager.h; sourceTree = "<group>"; };
 		26DE6EF922CC95690098C33F /* RouterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterManager.m; sourceTree = "<group>"; };
 		26DE6F0122CDD4210098C33F /* Pods_NetArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_NetArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +177,7 @@
 		1D98226621378243000FC047 /* NetArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				269D44FD22D71A5D0058936A /* Resources */,
 				26DE6EF722CC95540098C33F /* Router */,
 				1D9822C52137DE73000FC047 /* PrefixHeader.pch */,
 				1D9822C62137DFC9000FC047 /* Model */,
@@ -299,6 +320,11 @@
 		261832B422C71A83007C0264 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				269D450022D725070058936A /* ItemTableViewCell.h */,
+				269D450122D725070058936A /* ItemTableViewCell.m */,
+				269D450D22D72BA10058936A /* ItemTableViewCell+EX.h */,
+				269D450E22D72BA10058936A /* ItemTableViewCell+EX.m */,
+				269D451022D72D590058936A /* SubCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +332,8 @@
 		261832B522C71A83007C0264 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				269D44FA22D7190B0058936A /* ItemModel.h */,
+				269D44FB22D7190B0058936A /* ItemModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -319,6 +347,27 @@
 				261832B822C71A83007C0264 /* ViewController.m */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		269D44FD22D71A5D0058936A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				269D44FE22D71A5D0058936A /* question.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		269D451022D72D590058936A /* SubCell */ = {
+			isa = PBXGroup;
+			children = (
+				269D451122D72D590058936A /* ItemLabelTableViewCell.h */,
+				269D451222D72D590058936A /* ItemImageTableViewCell.m */,
+				269D451322D72D590058936A /* ItemButtonTableViewCell.m */,
+				269D451422D72D590058936A /* ItemImageTableViewCell.h */,
+				269D451522D72D590058936A /* ItemLabelTableViewCell.m */,
+				269D451622D72D590058936A /* ItemButtonTableViewCell.h */,
+			);
+			path = SubCell;
 			sourceTree = "<group>";
 		};
 		26DE6EF722CC95540098C33F /* Router */ = {
@@ -476,6 +525,7 @@
 				1D98227421378245000FC047 /* LaunchScreen.storyboard in Resources */,
 				1D98227121378245000FC047 /* Assets.xcassets in Resources */,
 				1D98226F21378244000FC047 /* Main.storyboard in Resources */,
+				269D44FF22D71A5D0058936A /* question.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,20 +589,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269D44FC22D7190B0058936A /* ItemModel.m in Sources */,
 				261832BB22C71A83007C0264 /* ViewController.m in Sources */,
 				261832AE22C709A8007C0264 /* DetailDataSource.m in Sources */,
 				1D9822C42137DDE5000FC047 /* UIViewController+Base.m in Sources */,
+				269D451922D72D590058936A /* ItemLabelTableViewCell.m in Sources */,
 				261832AB22C70996007C0264 /* DetailPresent.m in Sources */,
 				1D9822B32137CA6D000FC047 /* UserInfoNetwork.m in Sources */,
 				1D9822B12137CA6D000FC047 /* ContentListNetwork.m in Sources */,
 				26DE6EFA22CC95690098C33F /* RouterManager.m in Sources */,
 				1D9822A92137CA3E000FC047 /* NSObject+NetWorkTask.m in Sources */,
+				269D450222D725070058936A /* ItemTableViewCell.m in Sources */,
 				261832B322C71173007C0264 /* DetailModel.m in Sources */,
 				261832A822C5B7F3007C0264 /* DetailTableViewCell.m in Sources */,
+				269D451822D72D590058936A /* ItemButtonTableViewCell.m in Sources */,
 				1D9822C92137DFD3000FC047 /* UserModel.m in Sources */,
+				269D450F22D72BA10058936A /* ItemTableViewCell+EX.m in Sources */,
 				26DE6F1022CDE25B0098C33F /* NSTimer+Weak.m in Sources */,
 				261832A522C5B739007C0264 /* DetailViewController.m in Sources */,
 				1D98227721378245000FC047 /* main.m in Sources */,
+				269D451722D72D590058936A /* ItemImageTableViewCell.m in Sources */,
 				261832BC22C71A83007C0264 /* ViewModel.m in Sources */,
 				1D9822B22137CA6D000FC047 /* NetworkManager.m in Sources */,
 				1D98226921378243000FC047 /* AppDelegate.m in Sources */,
